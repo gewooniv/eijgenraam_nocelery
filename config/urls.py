@@ -20,8 +20,8 @@ urlpatterns = [
     path("users/", include("eijgenraam_nocelery.users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),
     # Your stuff: custom urls includes go here
-    path("", include("eijgenraamnet.articles.urls")),
-    path("", include("eijgenraamnet.gallery.urls")),
+    path("", include("eijgenraam_nocelery.articles.urls")),
+    path("", include("eijgenraam_nocelery.gallery.urls")),
     path("tinymce/", include("tinymce.urls")),
     # Media files
     *static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT),

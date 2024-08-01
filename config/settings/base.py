@@ -85,8 +85,8 @@ THIRD_PARTY_APPS = [
 LOCAL_APPS = [
     "eijgenraam_nocelery.users",
     # Your stuff: custom apps go here
-    "eijgenraamnet.articles",
-    "eijgenraamnet.gallery",
+    "eijgenraam_nocelery.articles",
+    "eijgenraam_nocelery.gallery",
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
