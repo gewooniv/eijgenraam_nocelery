@@ -3,7 +3,7 @@
 
 import datetime as dt
 
-from dateutil import tz
+import pytz as tz
 from django.http import HttpResponseRedirect
 from django.shortcuts import get_object_or_404
 from django.shortcuts import render
@@ -62,7 +62,7 @@ class PostView(View):
         if form.is_valid():
             comment = form.save(commit=False)
             comment.post = single_post
-            comment.date = dt.datetime.now(tz=tz.gettz("Europe/Amsterdam")).date()
+            comment.date = dt.datetime.now(tz=tz.timezone("Europe/Amsterdam")).date()
             comment.save()
 
             return HttpResponseRedirect(reverse("post-page", args=[slug]))
