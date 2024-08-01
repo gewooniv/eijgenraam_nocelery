@@ -1,0 +1,16 @@
+services:
+  docs:
+    image: eijgenraam_nocelery_local_docs
+    container_name: eijgenraam_nocelery_local_docs
+    build:
+      context: .
+      dockerfile: ./compose/local/docs/Dockerfile
+    env_file:
+      - ./.envs/.local/.django
+    volumes:
+      - ./docs:/docs:z
+      - ./config:/app/config:z
+      - ./eijgenraam_nocelery:/app/eijgenraam_nocelery:z
+    ports:
+      - '9000:9000'
+    command: /start-docs
