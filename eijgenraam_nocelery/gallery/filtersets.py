@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import django_filters
 
 from .models import Picture
