@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.messages.views import SuccessMessageMixin
 from django.db.models import QuerySet

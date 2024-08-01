@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from allauth.account.decorators import secure_admin_login
 from django.conf import settings
 from django.contrib import admin

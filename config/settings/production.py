@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # ruff: noqa: E501
 from .base import *  # noqa: F403
 from .base import DATABASES

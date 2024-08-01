@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import contextlib
 from http import HTTPStatus
 from importlib import reload

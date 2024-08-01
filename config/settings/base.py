@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # ruff: noqa: ERA001, E501
 """Base settings to build other settings files upon."""
 
@@ -77,11 +78,15 @@ THIRD_PARTY_APPS = [
     "allauth.account",
     "allauth.mfa",
     "allauth.socialaccount",
+    "tinymce",
+    "django_filters",
 ]
 
 LOCAL_APPS = [
     "eijgenraam_nocelery.users",
     # Your stuff: custom apps go here
+    "eijgenraamnet.articles",
+    "eijgenraamnet.gallery",
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 With these settings, tests run faster.
 """

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+  Foto gallerij - Eijgenraam.net
+{% endblock title %}
+{% block content %}
+  <section id="gallery">
+    <ul class="picture-gallery">
+      {% for picture in filter.qs %}
+        <li class="picture">
+          <a href="{{ picture.image.url }}"
+             data-lightbox="{{ picture.image.url }}"
+             data-title="{{ picture.name }}">
+            <img src="{{ picture.image.url }}" alt="{{ picture.name }}" />
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+  <section id="category">
+    <form action="" method="get">
+      {{ filter.form.as_p }}
+      <input type="submit" />
+    </form>
+  </section>
+  <script src="{% static 'js/lightbox-plus-jquery.js' %}"></script>
+{% endblock content %}

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from typing import TYPE_CHECKING
 
 from django.contrib.auth.hashers import make_password

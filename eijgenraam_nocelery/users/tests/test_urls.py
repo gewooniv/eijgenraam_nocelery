@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from django.urls import resolve
 from django.urls import reverse
 

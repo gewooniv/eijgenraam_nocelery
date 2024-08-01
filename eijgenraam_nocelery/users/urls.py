@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from django.urls import path
 
 from .views import user_detail_view
