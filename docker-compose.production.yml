@@ -15,6 +15,7 @@ services:
     image: eijgenraam_nocelery_production_django
     volumes:
       - production_django_media:/app/eijgenraam_nocelery/media
+      - production_django_media:/app/eijgenraam_nocelery/media/images
     depends_on:
       - postgres
       - redis

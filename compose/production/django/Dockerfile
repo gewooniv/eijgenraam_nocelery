@@ -73,9 +73,6 @@ COPY --chown=django:django . ${APP_HOME}
 # make django owner of the WORKDIR directory as well.
 RUN chown -R django:django ${APP_HOME}
 
-RUN mkdir -p /eijgenraam_nocelery/media && chown -R django:django /eijgenraam_nocelery/media
-RUN mkdir -p /eijgenraam_nocelery/media/images && chown -R django:django /eijgenraam_nocelery/media/images
-
 USER django
 
 RUN DATABASE_URL="" \
