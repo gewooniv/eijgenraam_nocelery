@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 # Create your views here.
 from django.views.generic import ListView
-from eijgenraamnet.articles.models import Post
+
+from eijgenraam_nocelery.articles.models import Post
 
 
 def get_posts():
