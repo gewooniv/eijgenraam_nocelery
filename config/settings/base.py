@@ -287,3 +287,32 @@ SOCIALACCOUNT_FORMS = {"signup": "eijgenraam_nocelery.users.forms.UserSocialSign
 
 # Your stuff...
 # ------------------------------------------------------------------------------
+
+TINYMCE_DEFAULT_CONFIG = {
+    "theme": "silver",
+    "height": 600,
+    "menubar": False,
+    "plugins": [
+        "advlist",
+        "autolink",
+        "link",
+        "image",
+        "lists",
+        "charmap",
+        "preview",
+        "anchor",
+        "pagebreak",
+        "searchreplace",
+        "wordcount",
+        "visualblocks",
+        "visualchars",
+        "code",
+        "fullscreen",
+        "insertdatetime",
+        "media",
+        "table",
+        "emoticons",
+        "help",
+    ],
+    "toolbar": "undo redo copy paste | styles | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview fullscreen | forecolor backcolor emoticons | help",
+}
