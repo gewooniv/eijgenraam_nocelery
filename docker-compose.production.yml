@@ -50,7 +50,6 @@ services:
   redis:
     image: docker.io/redis:6
 
-
   nginx:
     build:
       context: .
