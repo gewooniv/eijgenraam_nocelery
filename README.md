@@ -1,54 +1,27 @@
 # Eijgenraam.net
 
-For deployment without celery.
+This is a project to share insights of our family history and genealogy with others. The current website is outdated and to be replaced by this one.
+
+The current requirements are:
+* an admin panel to add posts/articles
+* a link and clear description to our family tree (external site)
+* a comment section below posts
+* a guestbook
+
+The project is currently hosted in a Docker container on an Ubuntu machine in the Oracle cloud. By using the Oracle cloud free tier, we are provided two (forever) free VM's. The project is built using Cookiecutter, a framework for jumpstarting production-ready Django projects quickly. Additional information can be found [here](https://github.com/cookiecutter/cookiecutter-django/).
+
+It's possible that the demo [site](https://eijgenra.am/) is down or has little content. This is because of the testing being done by the users and the active development. It's also possible that we have requested too many SSL-certificates in the last couple of days. This is because the production environment is not yet stable. Therefor you might receive some warnings. 
+
+
+## Built with:
 
 [![Built with Cookiecutter Django](https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg?logo=cookiecutter)](https://github.com/cookiecutter/cookiecutter-django/)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+[Lightbox](https://github.com/lokesh/lightbox2)
+[TinyMCE](https://github.com/jazzband/django-tinymce)
+[Docker](https://www.docker.com/)
+[Oracle Cloud](https://www.oracle.com/cloud/free/)
 
-License: MIT
+## Acknowledgments
 
-## Settings
-
-Moved to [settings](http://cookiecutter-django.readthedocs.io/en/latest/settings.html).
-
-## Basic Commands
-
-### Setting Up Your Users
-
-- To create a **normal user account**, just go to Sign Up and fill out the form. Once you submit it, you'll see a "Verify Your E-mail Address" page. Go to your console to see a simulated email verification message. Copy the link into your browser. Now the user's email should be verified and ready to go.
-
-- To create a **superuser account**, use this command:
-
-      $ python manage.py createsuperuser
-
-For convenience, you can keep your normal user logged in on Chrome and your superuser logged in on Firefox (or similar), so that you can see how the site behaves for both kinds of users.
-
-### Type checks
-
-Running type checks with mypy:
-
-    $ mypy eijgenraam_nocelery
-
-### Test coverage
-
-To run the tests, check your test coverage, and generate an HTML coverage report:
-
-    $ coverage run -m pytest
-    $ coverage html
-    $ open htmlcov/index.html
-
-#### Running tests with pytest
-
-    $ pytest
-
-### Live reloading and Sass CSS compilation
-
-Moved to [Live reloading and SASS compilation](https://cookiecutter-django.readthedocs.io/en/latest/developing-locally.html#sass-compilation-live-reloading).
-
-## Deployment
-
-The following details how to deploy this application.
-
-### Docker
-
-See detailed [cookiecutter-django Docker documentation](http://cookiecutter-django.readthedocs.io/en/latest/deployment-with-docker.html).
+* [Max](https://academind.com/)
