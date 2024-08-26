@@ -291,7 +291,7 @@ SOCIALACCOUNT_FORMS = {"signup": "eijgenraam_nocelery.users.forms.UserSocialSign
 TINYMCE_DEFAULT_CONFIG = {
     "theme": "silver",
     "height": 800,
-    "menubar": False,
+    "menubar": True,
     "plugins": [
         "advlist",
         "autolink",
@@ -316,4 +316,13 @@ TINYMCE_DEFAULT_CONFIG = {
     ],
     "toolbar1": "styles fontfamily fontsize | bold italic | alignleft aligncenter alignright alignjustify | outdent indent | importword exportpdf preview | fullscreen help",
     "toolbar2": "undo redo | table tableprops tablerowprops tablecellprops tabledelete | bullist numlist | link image | forecolor backcolor emoticons",
+    "style_formats": [
+        [
+            {
+                "title": "Responsive image",
+                "selector": "img",
+                "styles": {"width": "100%", "height": "100%"},
+            }
+        ]
+    ],
 }
