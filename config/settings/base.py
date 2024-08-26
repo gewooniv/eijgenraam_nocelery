@@ -321,7 +321,7 @@ TINYMCE_DEFAULT_CONFIG = {
             {
                 "title": "Responsive image",
                 "selector": "img",
-                "styles": {"width": "100%", "height": "100%"},
+                "styles": {"width": "100%", "height": "100%", "max-width": 600},
             }
         ]
     ],
