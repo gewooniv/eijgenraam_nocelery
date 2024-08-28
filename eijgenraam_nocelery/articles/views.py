@@ -25,19 +25,8 @@ def get_comments_per_post(post):
 
 
 # Create your views here.
-class MainPageView(ListView):
-    template_name = "../templates/pages/articles/posts.html"
-    model = Post
-    ordering = ["-date"]
-    context_object_name = "featured_posts"
-
-    def get_queryset(self):
-        queryset = super().get_queryset()
-        return queryset.filter(featured=True)
-
-
 class PostsView(ListView):
-    template_name = "../templates/pages/articles/posts.html"
+    template_name = "pages/articles/posts.html"
     model = Post
     ordering = ["-date"]
     context_object_name = "posts"
@@ -53,7 +42,7 @@ class PostView(View):
             "all_comments": get_comments_per_post(single_post),
         }
 
-        return render(request, "../templates/pages/articles/post-page.html", context)
+        return render(request, "pages/articles/post-page.html", context)
 
     def post(self, request, slug):
         single_post = get_object_or_404(Post, slug=slug)

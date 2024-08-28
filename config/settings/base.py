@@ -317,12 +317,20 @@ TINYMCE_DEFAULT_CONFIG = {
     "toolbar1": "styles fontfamily fontsize | bold italic | alignleft aligncenter alignright alignjustify | outdent indent | importword exportpdf preview | fullscreen help",
     "toolbar2": "undo redo | table tableprops tablerowprops tablecellprops tabledelete | bullist numlist | link image | forecolor backcolor emoticons",
     "style_formats": [
-        [
-            {
-                "title": "Responsive image",
-                "selector": "img",
-                "styles": {"width": "100%", "height": "100%", "max-width": 600},
-            }
-        ]
+        {
+            "title": "Responsive",
+            "selector": "img",
+            "styles": {"width": "100%", "height": "100%"},
+        },
+        {
+            "title": "Image Left",
+            "selector": "img",
+            "styles": {"float": "left", "margin": "0 10px 0 10px", "max-width": 600},
+        },
+        {
+            "title": "Image Right",
+            "selector": "img",
+            "styles": {"float": "right", "margin": "0 0 10px 10px", "max-width": 600},
+        },
     ],
 }

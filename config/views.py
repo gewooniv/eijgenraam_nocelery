@@ -11,7 +11,7 @@ def get_posts():
 
 # Create your views here.
 class MainPageView(ListView):
-    template_name = "../templates/pages/home.html"
+    template_name = "pages/home.html"
     model = Post
     ordering = ["-date"]
     context_object_name = "featured_posts"
