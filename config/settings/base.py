@@ -314,8 +314,14 @@ TINYMCE_DEFAULT_CONFIG = {
         "emoticons",
         "help",
     ],
+    # Toolbar setup
     "toolbar1": "styles fontfamily fontsize | bold italic | alignleft aligncenter alignright alignjustify | outdent indent | importword exportpdf preview | fullscreen help",
     "toolbar2": "undo redo | table tableprops tablerowprops tablecellprops tabledelete | bullist numlist | link image | forecolor backcolor emoticons",
+    # Custom font families.
+    "content_css": "https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css",
+    "content_style": "@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Roboto&display=swap'); body { font-family: 'Roboto', sans-serif; } h1,h2,h3,h4,h5,h6 { font-family: 'Lato', sans-serif; }",
+    "font_family_formats": "Arial Black=arial black,avant garde; Courier New=courier new,courier; Lato Black=lato; Roboto=roboto;",
+    # Custom style formats for images.
     "style_formats": [
         {
             "title": "Responsive",
@@ -341,5 +347,6 @@ TINYMCE_DEFAULT_CONFIG = {
             },
         },
     ],
+    # Option to merge with default formats.
     "style_formats_merge": True,
 }
