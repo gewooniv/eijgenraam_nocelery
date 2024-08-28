@@ -1,5 +1,5 @@
 #welcome {
-  margin: 4rem auto;
+  margin: 1rem auto;
 }
   #welcome img {
     width: 18rem;
@@ -10,7 +10,7 @@
 
   .author {
     align-items: flex-start;
-    margin: 0 0 0 1rem;
+    margin: 0 0 0 0.75rem;
   }
 
   main {

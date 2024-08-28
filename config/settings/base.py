@@ -320,17 +320,26 @@ TINYMCE_DEFAULT_CONFIG = {
         {
             "title": "Responsive",
             "selector": "img",
-            "styles": {"width": "100%", "height": "100%"},
+            "styles": {"width": "100%", "height": "100%", "margin": "10px 0 10px 0"},
         },
         {
             "title": "Image Left",
             "selector": "img",
-            "styles": {"float": "left", "margin": "0 10px 0 10px", "max-width": 600},
+            "styles": {
+                "float": "left",
+                "margin": "0 10px 10px 0",
+                "max-width": "420px",
+            },
         },
         {
             "title": "Image Right",
             "selector": "img",
-            "styles": {"float": "right", "margin": "0 0 10px 10px", "max-width": 600},
+            "styles": {
+                "float": "right",
+                "margin": "0 0 10px 10px",
+                "max-width": "420px",
+            },
         },
     ],
+    "style_formats_merge": True,
 }
