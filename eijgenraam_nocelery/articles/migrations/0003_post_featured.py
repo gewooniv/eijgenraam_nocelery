@@ -13,6 +13,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='post',
             name='featured',
-            field=models.BooleanField(null=True),
+            field=models.BooleanField(default=False, null=True),
         ),
     ]
